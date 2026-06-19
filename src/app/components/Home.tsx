@@ -9,7 +9,6 @@ interface HomePageProps {
 import Navbar from "@/app/components/Navbar";
 
 const Home = ({data}: HomePageProps) => {
-  console.log('Home.tsx data: ', data);
   return (
     <>
       <Navbar logo={"Thazin"} />

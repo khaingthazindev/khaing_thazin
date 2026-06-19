@@ -13,22 +13,26 @@ interface HeaderProps {
 
 export default function Header({ logo }: HeaderProps)
 {
-  const [navCollapse, setNavCollapse] = useState(true)
-  const [scroll, setScroll] = useState(false)
   const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false);
+  
+  const [isCollapse, setIsCollapse] = useState(true)
+  const [scroll, setScroll] = useState(false)
   
   useEffect(() => {
     const updateScroll = () => {
       window.scrollY >= 90 ? setScroll(true) : setScroll(false)
     }
     window.addEventListener('scroll', updateScroll)
+    
+    setMounted(true);
   }, [])
   
   
   const navs = ['home', 'about', 'projects', 'experience', 'contact']
   
   return (
-    <header className={`backdrop-filter backdrop-blur-lg ${scroll ? 'border-b bg-white bg-opacity-40' : 'border-b-0'} dark:bg-grey-900 dark:bg-opacity-40 border-gray-200 dark:border-b-0 z-30 min-w-full flex flex-col fixed`}>
+    <header className={`backdrop-filter backdrop-blur-lg ${scroll ? 'border-b bg-white bg-opacity-40' : 'border-b-0'} dark:bg-gray-900 dark:bg-opacity-40 border-gray-200 dark:border-b-0 z-30 min-w-full flex flex-col fixed`}>
       <nav className='w-full lg:w-11/12 2xl:w-4/5 md:px-6 2xl:px-0 mx-auto py-4 hidden sm:flex items-center justify-between'>
         <Link href={'/'} className='2xl:ml-6 hover:text-violet-700 hover:dark:text-violet-500 transition-colors duration-800'>
           <span className='text-lg font-medium'>{logo.split(' ')[0]}</span>
@@ -50,11 +54,21 @@ export default function Header({ logo }: HeaderProps)
             </li>
           ))}
           
-          <span
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            className='hover:bg-gray-100 hover:dark:bg-violet-700 p-1.5 rounded-full cursor-pointer transition-colors'>
-                        {theme === 'dark' ? <FiSun /> : <FiMoon />}
-                    </span>
+          {mounted && (
+            theme === 'dark' ? (
+              <FiSun
+                size={28}
+                onClick={() => setTheme('light')}
+                className="..."
+              />
+            ) : (
+              <FiMoon
+                size={28}
+                onClick={() => setTheme('dark')}
+                className="..."
+              />
+            )
+          )}
         
         </ul>
       </nav>
@@ -63,22 +77,32 @@ export default function Header({ logo }: HeaderProps)
         <span className='text-lg font-medium'>{logo.split(' ')[0]}</span>
         <div className='flex items-center gap-4'>
           
-          <span
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            className='bg-gray-100 dark:bg-violet-700 p-1.5 rounded-full cursor-pointer transition-colors'>
-                        {theme === 'dark' ? <FiSun /> : <FiMoon />}
-                    </span>
+          {mounted && (
+            theme === 'dark' ? (
+              <FiSun
+                size={28}
+                onClick={() => setTheme('light')}
+                className="..."
+              />
+            ) : (
+              <FiMoon
+                size={28}
+                onClick={() => setTheme('dark')}
+                className="..."
+              />
+            )
+          )}
           
           
-          <CgMenuRight size={20} onClick={() => setNavCollapse(false)} />
+          <CgMenuRight size={20} onClick={() => setIsCollapse(false)} />
         </div>
       </nav>
       
-      <div className={`flex min-h-screen w-screen absolute md:hidden top-0 ${!navCollapse ? 'right-0' : 'right-[-100%]'} bottom-0 z-50 ease-in duration-300`}>
-        <div className="w-2/4" onClick={() => setNavCollapse(true)}></div>
+      <div className={`flex min-h-screen w-screen absolute md:hidden top-0 ${!isCollapse ? 'right-0' : 'right-[-100%]'} bottom-0 z-50 ease-in duration-300`}>
+        <div className="w-2/4" onClick={() => setIsCollapse(true)}></div>
         
-        <div className="flex flex-col p-4 gap-5 bg-gray-100/95 backdrop-filter backdrop-blur-sm dark:bg-grey-900/95 w-3/4">
-          <CgClose className='self-end my-2' size={20} onClick={() => setNavCollapse(true)} />
+        <div className="flex flex-col p-4 gap-5 bg-gray-100/95 backdrop-filter backdrop-blur-sm dark:bg-gray-900/95 w-3/4">
+          <CgClose className='self-end my-2' size={20} onClick={() => setIsCollapse(true)} />
           
           {navs.slice(0, 4).map((menuItem) => (
             <ScrollLink
@@ -89,7 +113,7 @@ export default function Header({ logo }: HeaderProps)
               smooth={true}
               duration={500}
               isDynamic={true}
-              onClick={() => setNavCollapse(true)}
+              onClick={() => setIsCollapse(true)}
             >
               {menuItem}
             </ScrollLink>
@@ -99,7 +123,7 @@ export default function Header({ logo }: HeaderProps)
             offset={-60}
             smooth={true}
             duration={500}
-            onClick={() => setNavCollapse(true)}
+            onClick={() => setIsCollapse(true)}
             className='px-6 py-1.5 rounded-md bg-violet-600 hover:bg-violet-700 text-white text-center'>
             Contact
           </ScrollLink>

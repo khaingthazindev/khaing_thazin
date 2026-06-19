@@ -4,11 +4,10 @@ import Home from "@/app/components/Home";
 
 export default function Page() {
   return (
-    <Loading />
-    // <div>
-    //   {
-    //     data ? <Home data={data} /> : <Loading />
-    //   }
-    // </div>
+    <div>
+      {
+        data ? <Home data={data} /> : <Loading />
+      }
+    </div>
   );
 }
