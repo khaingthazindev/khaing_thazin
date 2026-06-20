@@ -14,8 +14,8 @@ interface HeaderProps {
 export default function Header({ logo }: HeaderProps)
 {
   const { theme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false);
   
+  const [mounted, setMounted] = useState(false);
   const [isCollapse, setIsCollapse] = useState(true)
   const [scroll, setScroll] = useState(false)
   
@@ -32,9 +32,9 @@ export default function Header({ logo }: HeaderProps)
   const navs = ['home', 'about', 'projects', 'experience', 'contact']
   
   return (
-    <header className={`backdrop-filter backdrop-blur-lg ${scroll ? 'border-b bg-white bg-opacity-40' : 'border-b-0'} dark:bg-gray-900 dark:bg-opacity-40 border-gray-200 dark:border-b-0 z-30 min-w-full flex flex-col fixed`}>
-      <nav className='w-full lg:w-11/12 2xl:w-4/5 md:px-6 2xl:px-0 mx-auto py-4 hidden sm:flex items-center justify-between'>
-        <Link href={'/'} className='2xl:ml-6 hover:text-violet-700 hover:dark:text-violet-500 transition-colors duration-800'>
+    <header className={`backdrop-blur-lg z-30 w-full flex flex-col fixed ${scroll ? 'border-b border-gray-200 bg-white bg-opacity-40' : ''} dark:bg-gray-900 dark:bg-opacity-40`}>
+      <nav className='w-full lg:w-11/12 2xl:w-4/5 md:px-6 2xl:px-0 py-4 hidden sm:flex items-center justify-between cursor-pointer'>
+        <Link href={'/'} className='2xl:ml-6 hover:text-violet-700 hover:dark:text-violet-500 transition-colors duration-600'>
           <span className='text-lg font-medium'>{logo.split(' ')[0]}</span>
         </Link>
         
@@ -42,11 +42,11 @@ export default function Header({ logo }: HeaderProps)
           {navs.map((navItem, index) => (
             <li key={index}>
               <ScrollLink
-                className='hover:text-violet-700 hover:dark:text-violet-500 transition-colors capitalize cursor-pointer'
+                className='hover:text-violet-700 hover:dark:text-violet-500 transition-colors capitalize'
                 to={navItem}
-                offset={-60}
                 smooth={true}
                 duration={500}
+                offset={-60}
                 isDynamic={true}
               >
                 {navItem}
@@ -57,19 +57,16 @@ export default function Header({ logo }: HeaderProps)
           {mounted && (
             theme === 'dark' ? (
               <FiSun
-                size={28}
+                size={20}
                 onClick={() => setTheme('light')}
-                className="..."
               />
             ) : (
               <FiMoon
-                size={28}
+                size={20}
                 onClick={() => setTheme('dark')}
-                className="..."
               />
             )
           )}
-        
         </ul>
       </nav>
       
@@ -80,13 +77,13 @@ export default function Header({ logo }: HeaderProps)
           {mounted && (
             theme === 'dark' ? (
               <FiSun
-                size={28}
+                size={20}
                 onClick={() => setTheme('light')}
                 className="..."
               />
             ) : (
               <FiMoon
-                size={28}
+                size={20}
                 onClick={() => setTheme('dark')}
                 className="..."
               />
