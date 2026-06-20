@@ -71,7 +71,9 @@ export default function Header({ logo }: HeaderProps)
       </nav>
       
       <nav className='p-4 flex sm:hidden items-center justify-between'>
-        <span className='text-lg font-medium'>{logo.split(' ')[0]}</span>
+        <Link href={'/'} className='2xl:ml-6 hover:text-violet-700 hover:dark:text-violet-500 transition-colors duration-600'>
+          <span className='text-lg font-medium'>{logo.split(' ')[0]}</span>
+        </Link>
         <div className='flex items-center gap-4'>
           
           {mounted && (
@@ -79,27 +81,26 @@ export default function Header({ logo }: HeaderProps)
               <FiSun
                 size={20}
                 onClick={() => setTheme('light')}
-                className="..."
+                className="cursor-pointer"
               />
             ) : (
               <FiMoon
                 size={20}
                 onClick={() => setTheme('dark')}
-                className="..."
+                className="cursor-pointer"
               />
             )
           )}
           
-          
-          <CgMenuRight size={20} onClick={() => setIsCollapse(false)} />
+          <CgMenuRight size={20} onClick={() => setIsCollapse(false)} className='cursor-pointer' />
         </div>
       </nav>
       
-      <div className={`flex min-h-screen w-screen absolute md:hidden top-0 ${!isCollapse ? 'right-0' : 'right-[-100%]'} bottom-0 z-50 ease-in duration-300`}>
+      <div className={`flex min-h-screen w-screen absolute md:hidden top-0 ${isCollapse ? 'right-[-100%]' : 'right-0'} bottom-0 z-50 ease-in duration-300`}>
         <div className="w-2/4" onClick={() => setIsCollapse(true)}></div>
         
         <div className="flex flex-col p-4 gap-5 bg-gray-100/95 backdrop-filter backdrop-blur-sm dark:bg-gray-900/95 w-3/4">
-          <CgClose className='self-end my-2' size={20} onClick={() => setIsCollapse(true)} />
+          <CgClose className='self-end my-2 cursor-pointer' size={20} onClick={() => setIsCollapse(true)} />
           
           {navs.slice(0, 4).map((menuItem) => (
             <ScrollLink
@@ -121,7 +122,7 @@ export default function Header({ logo }: HeaderProps)
             smooth={true}
             duration={500}
             onClick={() => setIsCollapse(true)}
-            className='px-6 py-1.5 rounded-md bg-violet-600 hover:bg-violet-700 text-white text-center'>
+            className='px-6 py-1.5 rounded-md bg-violet-500 hover:bg-violet-700 text-white text-center cursor-pointer'>
             Contact
           </ScrollLink>
         </div>
