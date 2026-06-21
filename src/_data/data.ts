@@ -7,14 +7,34 @@ export const data = {
       "Backend Development",
       "Team Management",
     ],
-    "heroImage": null,
+    "heroImage": "/images/main_bg.jpg",
     "techStackImages": [
-      "/php.png",
-      "/js.png",
-      "/react.png",
-      "/mysql.png",
+      "/images/php.png",
+      "/images/js.png",
+      "/images/tailwindcss.png",
+      "/images/react.png",
+      "/images/mysql.png",
     ]
   },
+  "socials": [
+    {
+      "name": "Linkedin",
+      "icon": "FaLinkedin",
+      "link": "https://www.linkedin.com/in/khaing-thazin-b119a817b/"
+    },
+    {
+      "name": "Github1",
+      "icon": "FaGithub",
+      "link": "https://github.com/khaingthazindev"
+    },
+    {
+      "name": "Github2",
+      "icon": "FaGithub",
+      "link": "https://github.com/khaingzinkhaingzin"
+    },
+  ],
+  
+  
   "about": {
     "aboutImage": "https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg",
     "aboutImageCaption": "< I build stuff 🚀/>",
@@ -23,28 +43,6 @@ export const data = {
     "callUrl": "",
     "resumeUrl": ""
   },
-  "socials": [
-    {
-      "name": "Linkedin",
-      "icon": "FaLinkedin",
-      "link": "https://www.linkedin.com/in/jhon-doe"
-    },
-    {
-      "name": "Github",
-      "icon": "FaGithub",
-      "link": "https://github.com/jhon-doe"
-    },
-    {
-      "name": "Instagram",
-      "icon": "FaInstagram",
-      "link": "https://www.instagram.com/jhondoe"
-    },
-    {
-      "name": "Twitter",
-      "icon": "FaTwitter",
-      "link": "https://twitter.com/jhondoe"
-    }
-  ],
   "skills": [
     {
       "name": "Javascript",

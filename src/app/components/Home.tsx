@@ -8,13 +8,14 @@ interface HomePageProps {
 
 import Navbar from "@/app/components/Navbar";
 import Intro from "@/app/components/Intro";
+import Network from "@/app/components/Network";
 
 const Home = ({data}: HomePageProps) => {
   return (
     <>
       <Navbar logo={"Thazin"} />
       <Intro mainData={data.main} />
-      {/*<div className="h-screen bg-[url('/images/main_bg.jpg')] bg-cover bg-center"></div>*/}
+      <Network socials={data.socials} />
     </>
   )
 }

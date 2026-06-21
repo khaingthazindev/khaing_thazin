@@ -13,20 +13,18 @@ const Intro = ({ mainData }: IntroProps) => {
   
   const { theme } = useTheme()
   const { name, titles, heroImage, shortDesc, techStackImages } = mainData
-  
   return (
     <section id='home' className={`${theme === 'dark' && "bg-grey-900"} relative min-h-screen w-full mx-auto overflow-hidden`}>
       
       <div className="absolute -z-10 min-h-screen h-full w-full dark:h-0 dark:w-0">
         <Image
-          src="/images/main_bg.jpg"
+          src={heroImage}
           alt="Background Image"
           fill
         />
       </div>
       
       <div className="py-16 lg:py-48 flex flex-col-reverse lg:flex-row justify-around gap-10 lg:gap-0">
-        
         <div className="flex flex-col gap-4 md:gap-6 text-left lg:w-1/2 2xl:w-1/3 mx-4 md:mx-6 xl:mx-0">
           <div className="flex items-center gap-1">
             <Image src="/images/waving-hand.gif" alt="" width={20} height={20} />
@@ -48,8 +46,8 @@ const Intro = ({ mainData }: IntroProps) => {
                 loop: true,
                 deleteSpeed: 50,
                 delay: 50,
-                wrapperClassName: "text-violet-700 dark:text-gray-600 text-lg md:text-2xl font-medium",
-                cursorClassName: "text-violet-700 dark:text-gray-600 text-lg md:text-2xl"
+                wrapperClassName: "text-violet-600 dark:text-gray-600 text-lg md:text-2xl font-medium",
+                cursorClassName: "text-violet-600 dark:text-gray-600 text-lg md:text-2xl"
               }}
             />
           </div>
@@ -82,17 +80,52 @@ const Intro = ({ mainData }: IntroProps) => {
               src="/images/profile_avata.png" />
           </div>
           
-          <div className="absolute -top-6 -left-12 lg:-top-14 lg:-left-32 w-16 h-16 md:w-20 md:h-20 bg-white dark:bg-grey-800 rounded-full grid place-items-center hover:shadow-lg transition-shadow">
-            <Image src="/images/php.png" alt='PHP' className="h-8 w-8 md:h-10 md:w-10 object-cover" width={100} height={100} />
+          <div className="absolute p-5 bg-white dark:bg-grey-800 rounded-full -top-6 -left-12 lg:-top-14 lg:-left-32 hover:shadow-lg transition-shadow outline outline-gray-100">
+            <Image
+              src={techStackImages[0]}
+              alt='PHP'
+              width={50}
+              height={50} />
           </div>
-          <div className="absolute grid top-0 -right-12 lg:-right-4 w-14 h-14 bg-white dark:bg-grey-800 rounded-full place-items-center hover:shadow-lg transition-shadow">
-            <Image src="/images/mysql.png" alt='tech-stack' className="h-8 w-8 md:h-10 md:w-10 object-cover" width={100} height={100} />
+          <div className="absolute p-5 bg-white dark:bg-grey-800 rounded-full -top-3 -right-1 lg:-right-4 hover:shadow-lg transition-shadow outline outline-gray-100">
+            <Image
+              src={techStackImages[1]}
+              alt='Javascript'
+              className="h-6 w-6 md:h-10 md:w-10 object-cover"
+              width={100}
+              height={100} />
           </div>
-          <div className="absolute grid bottom-[4rem] md:bottom-24 -right-16 md:-right-20 lg:bottom-[8.5rem] lg:-right-12 w-12 h-12 md:w-16 md:h-16 bg-white dark:bg-grey-800 rounded-full place-items-center hover:shadow-lg transition-shadow">
-            <Image src="/images/js.png" alt='tech-stack' className="h-6 w-6 md:h-10 md:w-10 object-cover" width={100} height={100} />
+          <div className="absolute p-5 bg-white dark:bg-grey-800 rounded-full bottom-[4rem] md:bottom-24 -right-16 md:-right-20 lg:bottom-[8.5rem] lg:-right-12 hover:shadow-lg transition-shadow outline outline-gray-100">
+            <Image
+              src={techStackImages[2]}
+              alt='TailwindCSS'
+              className="h-6 w-6 md:h-10 md:w-10 object-cover"
+              width={100}
+              height={100} />
           </div>
-          <div className="absolute grid -bottom-10 -right-8 lg:-bottom-0 lg:right-6 w-14 md:w-16 h-14 md:h-16 bg-white dark:bg-grey-800 rounded-full place-items-center hover:shadow-lg transition-shadow">
-            <Image src="/images/react.png" alt='tech-stack' className="h-10 w-10 object-cover" width={100} height={100} />
+          <div className="absolute p-5 bg-white dark:bg-grey-800 rounded-full bottom-[4rem] md:bottom-24 -right-16 md:-right-20 lg:bottom-[8.5rem] lg:-right-12 hover:shadow-lg transition-shadow outline outline-gray-100">
+            <Image
+              src={techStackImages[2]}
+              alt='TailwindCSS'
+              className="h-6 w-6 md:h-10 md:w-10 object-cover"
+              width={100}
+              height={100} />
+          </div>
+          <div className="absolute p-5 bg-white dark:bg-grey-800 rounded-full -bottom-10 -right-8 lg:bottom-8 lg:-right-8 hover:shadow-lg transition-shadow outline outline-gray-100">
+            <Image
+              src={techStackImages[3]}
+              alt='TailwindCSS'
+              className="h-6 w-6 md:h-10 md:w-10 object-cover"
+              width={100}
+              height={100} />
+          </div>
+          <div className="absolute p-5 bg-white dark:bg-grey-800 rounded-full -bottom-20 right-15 lg:-bottom-15 lg:right-8 hover:shadow-lg transition-shadow outline outline-gray-100">
+            <Image
+              src={techStackImages[4]}
+              alt='TailwindCSS'
+              className="h-6 w-6 md:h-10 md:w-10 object-cover"
+              width={100}
+              height={100} />
           </div>
         </div>
       </div>

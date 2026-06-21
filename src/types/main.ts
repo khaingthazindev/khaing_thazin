@@ -1,3 +1,23 @@
+type main = {
+  name: string,
+  titles: string[],
+  heroImage: string,
+  shortDesc: string,
+  techStackImages: string[],
+}
+
+type social = {
+  name: string,
+  icon: string,
+  link: string
+}
+
+
+
+
+
+
+
 type skill = {
   name: string,
   image: string,
@@ -31,14 +51,6 @@ type education = {
   endDate: string,
 }
 
-type main = {
-  name: string,
-  titles: string[],
-  heroImage: string,
-  shortDesc: string,
-  techStackImages: string[],
-}
-
 type about = {
   aboutImage: string,
   aboutImageCaption: string,
@@ -46,12 +58,6 @@ type about = {
   about: string,
   resumeUrl: string,
   callUrl: string
-}
-
-type social = {
-  name: string,
-  icon: string,
-  link: string
 }
 
 type data = {
