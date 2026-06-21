@@ -14,13 +14,14 @@ const Intro = ({ mainData }: IntroProps) => {
   const { theme } = useTheme()
   const { name, titles, heroImage, shortDesc, techStackImages } = mainData
   return (
-    <section id='home' className={`${theme === 'dark' && "bg-grey-900"} relative min-h-screen w-full mx-auto overflow-hidden`}>
+    <section id='home' className={`${theme === 'dark' && "bg-gray-900"} relative min-h-screen w-full mx-auto overflow-hidden`}>
       
       <div className="absolute -z-10 min-h-screen h-full w-full dark:h-0 dark:w-0">
         <Image
           src={heroImage}
           alt="Background Image"
           fill
+          sizes="100vh"
         />
       </div>
       
@@ -79,15 +80,14 @@ const Intro = ({ mainData }: IntroProps) => {
               className="rounded-full w-full h-full object-cover"
               src="/images/profile_avata.png" />
           </div>
-          
-          <div className="absolute p-5 bg-white dark:bg-grey-800 rounded-full -top-6 -left-12 lg:-top-14 lg:-left-32 hover:shadow-lg transition-shadow outline outline-gray-100">
+          <div className="absolute p-5 bg-white dark:bg-gray-700 rounded-full -top-6 -left-12 lg:-top-14 lg:-left-32 hover:shadow-lg transition-shadow outline outline-gray-100 dark:outline-gray-900">
             <Image
               src={techStackImages[0]}
               alt='PHP'
               width={50}
               height={50} />
           </div>
-          <div className="absolute p-5 bg-white dark:bg-grey-800 rounded-full -top-3 -right-1 lg:-right-4 hover:shadow-lg transition-shadow outline outline-gray-100">
+          <div className="absolute p-5 bg-white dark:bg-gray-700 rounded-full -top-3 -right-1 lg:-right-4 hover:shadow-lg transition-shadow outline outline-gray-100 dark:outline-gray-900">
             <Image
               src={techStackImages[1]}
               alt='Javascript'
@@ -95,7 +95,7 @@ const Intro = ({ mainData }: IntroProps) => {
               width={100}
               height={100} />
           </div>
-          <div className="absolute p-5 bg-white dark:bg-grey-800 rounded-full bottom-[4rem] md:bottom-24 -right-16 md:-right-20 lg:bottom-[8.5rem] lg:-right-12 hover:shadow-lg transition-shadow outline outline-gray-100">
+          <div className="absolute p-5 bg-white dark:bg-gray-700 rounded-full bottom-[4rem] md:bottom-24 -right-16 md:-right-20 lg:bottom-[8.5rem] lg:-right-12 hover:shadow-lg transition-shadow outline outline-gray-100 dark:outline-gray-900">
             <Image
               src={techStackImages[2]}
               alt='TailwindCSS'
@@ -103,7 +103,7 @@ const Intro = ({ mainData }: IntroProps) => {
               width={100}
               height={100} />
           </div>
-          <div className="absolute p-5 bg-white dark:bg-grey-800 rounded-full bottom-[4rem] md:bottom-24 -right-16 md:-right-20 lg:bottom-[8.5rem] lg:-right-12 hover:shadow-lg transition-shadow outline outline-gray-100">
+          <div className="absolute p-5 bg-white dark:bg-gray-700 rounded-full bottom-[4rem] md:bottom-24 -right-16 md:-right-20 lg:bottom-[8.5rem] lg:-right-12 hover:shadow-lg transition-shadow outline outline-gray-100 dark:outline-gray-900">
             <Image
               src={techStackImages[2]}
               alt='TailwindCSS'
@@ -111,7 +111,7 @@ const Intro = ({ mainData }: IntroProps) => {
               width={100}
               height={100} />
           </div>
-          <div className="absolute p-5 bg-white dark:bg-grey-800 rounded-full -bottom-10 -right-8 lg:bottom-8 lg:-right-8 hover:shadow-lg transition-shadow outline outline-gray-100">
+          <div className="absolute p-5 bg-white dark:bg-gray-700 rounded-full -bottom-10 -right-8 lg:bottom-8 lg:-right-8 hover:shadow-lg transition-shadow outline outline-gray-100 dark:outline-gray-900">
             <Image
               src={techStackImages[3]}
               alt='TailwindCSS'
@@ -119,7 +119,7 @@ const Intro = ({ mainData }: IntroProps) => {
               width={100}
               height={100} />
           </div>
-          <div className="absolute p-5 bg-white dark:bg-grey-800 rounded-full -bottom-20 right-15 lg:-bottom-15 lg:right-8 hover:shadow-lg transition-shadow outline outline-gray-100">
+          <div className="absolute p-5 bg-white dark:bg-gray-800 rounded-full -bottom-20 right-15 lg:-bottom-15 lg:right-8 hover:shadow-lg transition-shadow outline outline-gray-100 dark:outline-gray-900">
             <Image
               src={techStackImages[4]}
               alt='TailwindCSS'
