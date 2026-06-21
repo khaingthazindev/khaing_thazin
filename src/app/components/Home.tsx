@@ -7,12 +7,14 @@ interface HomePageProps {
 }
 
 import Navbar from "@/app/components/Navbar";
+import Intro from "@/app/components/Intro";
 
 const Home = ({data}: HomePageProps) => {
   return (
     <>
       <Navbar logo={"Thazin"} />
-      <div className="h-500 bg-[url('/images/main_bg.jpg')] bg-cover bg-center"></div>
+      <Intro mainData={data.main} />
+      {/*<div className="h-screen bg-[url('/images/main_bg.jpg')] bg-cover bg-center"></div>*/}
     </>
   )
 }

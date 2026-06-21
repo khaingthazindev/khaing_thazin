@@ -4,9 +4,10 @@ export const data = {
     "shortDesc": "I focus on developing user-friendly web applications that meet the client's requirements, with attention to detail, scalability, and performance.",
     "titles": [
       "Frontend Development",
-      "Backend Development"
+      "Backend Development",
+      "Team Management",
     ],
-    "heroImage": "https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg",
+    "heroImage": null,
     "techStackImages": [
       "/php.png",
       "/js.png",
