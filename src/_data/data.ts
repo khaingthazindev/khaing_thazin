@@ -33,85 +33,154 @@ export const data = {
       "link": "https://github.com/khaingzinkhaingzin"
     },
   ],
-  
-  
   "about": {
-    "aboutImage": "https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg",
-    "aboutImageCaption": "< I build stuff 🚀/>",
-    "title": "Full Stack Developer",
-    "about": "I am a Full-Stack developer based in Shwe Taung, Myanmar. I'm an Computer Science graduate from Computer University Pyay. I'm passionate about creating beautiful, functional, and user-friendly websites and I'm constantly pushing myself to learn and grow as a developer. Love building full-stack projects.",
+    "aboutImage": "/images/profile_avatar.png",
+    "aboutImageCaption": "<> I'm building stuff. 🚀 </>",
+    "title": "Web Developer",
+    "about": "I am a web developer based in Shwe Taung, Myanmar. I'm a Computer Science graduate from University of Computer Studies (Pyay). I'm passionate about creating beautiful, functional, and user-friendly websites and I'm constantly pushing myself to learn and grow as a developer. Love building full-stack projects.",
     "callUrl": "",
     "resumeUrl": ""
   },
   "skills": [
     {
-      "name": "Javascript",
-      "image": "/js.png",
+      "name": "HTML",
+      "image": "/images/html.png",
       "category": "All"
     },
     {
-      "name": "React",
-      "image": "/react.png",
+      "name": "HTML",
+      "image": "/images/html.png",
+      "category": "Frontend"
+    },
+    {
+      "name": "CSS",
+      "image": "/images/css.png",
+      "category": "All"
+    },
+    {
+      "name": "CSS",
+      "image": "/images/css.png",
+      "category": "Frontend"
+    },
+    {
+      "name": "Javascript",
+      "image": "/images/javascript.png",
+      "category": "All"
+    },
+    {
+      "name": "Javascript",
+      "image": "/images/javascript.png",
+      "category": "Frontend"
+    },
+    {
+      "name": "JQuery",
+      "image": "/images/jquery.jpeg",
+      "category": "All"
+    },
+    {
+      "name": "JQuery",
+      "image": "/images/jquery.jpeg",
+      "category": "Frontend"
+    },
+    {
+      "name": "Bootstrap",
+      "image": "/images/bootstrap.png",
       "category": "All"
     },
     {
       "name": "Bootstrap",
-      "image": "/bootstrap.png",
+      "image": "/images/bootstrap.png",
+      "category": "Frontend"
+    },
+    {
+      "name": "TailwindCSS",
+      "image": "/images/tailwind_css.png",
+      "category": "All"
+    },
+    {
+      "name": "TailwindCSS",
+      "image": "/images/tailwind_css.png",
+      "category": "Frontend"
+    },
+    {
+      "name": "Vue.js",
+      "image": "/images/vuejs.png",
+      "category": "All"
+    },
+    {
+      "name": "Vue.js",
+      "image": "/images/vuejs.png",
+      "category": "Frontend"
+    },
+    {
+      "name": "React.js",
+      "image": "/images/react.png",
+      "category": "All"
+    },
+    {
+      "name": "React.js",
+      "image": "/images/react.png",
+      "category": "Frontend"
+    },
+    {
+      "name": "Next.js",
+      "image": "/images/nextjs.png",
+      "category": "All"
+    },
+    {
+      "name": "Next.js",
+      "image": "/images/nextjs.png",
+      "category": "Frontend"
+    },
+    
+    {
+      "name": "PHP",
+      "image": "/images/php.png",
       "category": "All"
     },
     {
       "name": "PHP",
-      "image": "/php.png",
-      "category": "All"
+      "image": "/images/php.png",
+      "category": "Backend"
     },
     {
-      "name": "Database",
-      "image": "/mysql.png",
-      "category": "All"
-    },
-    {
-      "name": "Node.js",
-      "image": "/node.png",
+      "name": "Laravel",
+      "image": "/images/laravel.png",
       "category": "All"
     },
     {
       "name": "Laravel",
-      "image": "/laravel.jpg",
+      "image": "/images/laravel.png",
+      "category": "Backend"
+    },
+    {
+      "name": "Express.js",
+      "image": "/images/express.png",
       "category": "All"
     },
-
-
     {
-      "name": "Javascript",
-      "image": "/js.png",
-      "category": "Frontend"
-    },
-    {
-      "name": "React",
-      "image": "/react.png",
-      "category": "Frontend"
-    },
-    {
-      "name": "Bootstrap",
-      "image": "/bootstrap.png",
-      "category": "Frontend"
-    },
-    {
-      "name": "PHP",
-      "image": "/php.png",
+      "name": "Express.js",
+      "image": "/images/express.png",
       "category": "Backend"
     },
+    
     {
-      "name": "Database",
-      "image": "/mysql.png",
+      "name": "MySQL",
+      "image": "/images/mysql.png",
+      "category": "All"
+    },
+    {
+      "name": "MySQL",
+      "image": "/images/mysql.png",
       "category": "Database"
     },
-    {
-      "name": "Node.js",
-      "image": "/node.png",
-      "category": "Backend"
-    },
   ],
+  
+  
+  
+  
+  
+  
   "projects": [
     {
       "name": "Task Management",

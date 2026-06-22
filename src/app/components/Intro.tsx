@@ -78,7 +78,7 @@ const Intro = ({ mainData }: IntroProps) => {
               width={1000}
               height={1000}
               className="rounded-full w-full h-full object-cover"
-              src="/images/profile_avata.png" />
+              src="/images/profile_avatar.png" />
           </div>
           <div className="absolute p-5 bg-white dark:bg-gray-700 rounded-full -top-6 -left-12 lg:-top-14 lg:-left-32 hover:shadow-lg transition-shadow outline outline-gray-100 dark:outline-gray-900">
             <Image
