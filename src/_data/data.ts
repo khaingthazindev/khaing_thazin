@@ -175,18 +175,177 @@ export const data = {
       "category": "Database"
     },
   ],
-  
-  
-  
-  
-  
-  
   "projects": [
     {
-      "name": "Task Management",
-      "techstack": "Laravel, React.js, HTML5, CSS3, JavaScript",
+      "name": "Portfolio",
+      "techstack": "TailwindCSS, Next.js",
+      "category": "All",
+      "image": "/images/projects/portfolio.png",
+      "links": {
+        "code": "https://github.com/khaingthazindev/task-management",
+        "video": "https://github.com/khaingthazindev/task-management",
+        "visit": "https://github.com/khaingthazindev/task-management"
+      }
+    },
+    {
+      "name": "Portfolio",
+      "techstack": "TailwindCSS, Next.js",
+      "category": "Next.js",
+      "image": "/images/projects/portfolio.png",
+      "links": {
+        "code": "https://github.com/khaingthazindev/task-management",
+        "video": "https://github.com/khaingthazindev/task-management",
+        "visit": "https://github.com/khaingthazindev/task-management"
+      }
+    },
+    {
+      "name": "Yezin Agricultural University E-Library",
+      "techstack": "Laravel, Bootsrap",
       "category": "Laravel",
-      "image": "/projects/task_management.png",
+      "image": "/images/projects/yezin_elibrary.png",
+      "links": {
+        "code": "https://github.com/khaingthazindev/task-management",
+        "video": "https://github.com/khaingthazindev/task-management",
+        "visit": "https://github.com/khaingthazindev/task-management"
+      }
+    },
+    {
+      "name": "Yezin Agricultural University E-Library",
+      "techstack": "Laravel, Bootsrap",
+      "category": "All",
+      "image": "/images/projects/yezin_elibrary.png",
+      "links": {
+        "code": "https://github.com/khaingthazindev/task-management",
+        "video": "https://github.com/khaingthazindev/task-management",
+        "visit": "https://github.com/khaingthazindev/task-management"
+      }
+    },
+    {
+      "name": "Employee Management System",
+      "techstack": "Laravel, Bootstrap",
+      "category": "Laravel",
+      "image": "/images/projects/employee_management.png",
+      "links": {
+        "code": "",
+        "video": "",
+        "visit": "  "
+      }
+    },
+    {
+      "name": "Employee Management System",
+      "techstack": "Laravel, Bootstrap",
+      "category": "All",
+      "image": "/images/projects/employee_management.png",
+      "links": {
+        "code": "https://github.com/khaingthazindev/task-management",
+        "video": "",
+        "visit": "  "
+      }
+    },
+    {
+      "name": "Myanmar Services Trade and Investment Portal",
+      "techstack": "Laravel, Bootstrap",
+      "category": "Laravel",
+      "image": "/images/projects/stip.png",
+      "links": {
+        "code": "https://github.com/khaingthazindev/task-management",
+        "video": "",
+        "visit": "  "
+      }
+    },
+    {
+      "name": "Myanmar Services Trade and Investment Portal",
+      "techstack": "Laravel, Bootstrap",
+      "category": "All",
+      "image": "/images/projects/stip.png",
+      "links": {
+        "code": "https://github.com/khaingthazindev/task-management",
+        "video": "",
+        "visit": "  "
+      }
+    },
+    {
+      "name": "Excellent Fortune Insurance Website",
+      "techstack": "Laravel, Bootstrap",
+      "category": "Laravel",
+      "image": "/images/projects/efi.png",
+      "links": {
+        "code": "https://github.com/khaingthazindev/task-management",
+        "video": "",
+        "visit": "  "
+      }
+    },
+    {
+      "name": "Excellent Fortune Insurance Website",
+      "techstack": "Laravel, Bootstrap",
+      "category": "All",
+      "image": "/images/projects/efi.png",
+      "links": {
+        "code": "https://github.com/khaingthazindev/task-management",
+        "video": "",
+        "visit": "  "
+      }
+    },
+    {
+      "name": "Solution Hub Website",
+      "techstack": "Laravel, Bootstrap",
+      "category": "Laravel",
+      "image": "/images/projects/solutionhub.png",
+      "links": {
+        "code": "https://github.com/khaingthazindev/task-management",
+        "video": "",
+        "visit": "  "
+      }
+    },
+    {
+      "name": "Solution Hub Website",
+      "techstack": "Laravel, Bootstrap",
+      "category": "All",
+      "image": "/images/projects/solutionhub.png",
+      "links": {
+        "code": "https://github.com/khaingthazindev/task-management",
+        "video": "",
+        "visit": "  "
+      }
+    },
+    {
+      "name": "FDA Web Application",
+      "techstack": "Laravel, Bootstrap",
+      "category": "Laravel",
+      "image": "/images/projects/fda.png",
+      "links": {
+        "code": "https://github.com/khaingthazindev/task-management",
+        "video": "",
+        "visit": "  "
+      }
+    },
+    {
+      "name": "FDA Web Application",
+      "techstack": "Laravel, Bootstrap",
+      "category": "All",
+      "image": "/images/projects/fda.png",
+      "links": {
+        "code": "https://github.com/khaingthazindev/task-management",
+        "video": "",
+        "visit": "  "
+      }
+    },
+    {
+      "name": "Task Management",
+      "techstack": "Laravel, React.js",
+      "category": "React.js",
+      "image": "/images/projects/task_management.png",
+      "links": {
+        "code": "https://github.com/khaingthazindev/task-management",
+        "video": "",
+        "visit": "  "
+      }
+    },
+    {
+      "name": "Task Management",
+      "techstack": "Laravel, React.js",
+      "category": "All",
+      "image": "/images/projects/task_management.png",
       "links": {
         "code": "https://github.com/khaingthazindev/task-management",
         "video": "",
@@ -195,9 +354,20 @@ export const data = {
     },
     {
       "name": "Yangon Railway Service",
-      "techstack": "Laravel, Vue.js, Vant (Mobile UI), HTML5, CSS3, JavaScript",
+      "techstack": "Laravel, Vue.js, Vant (Mobile UI)",
       "category": "Laravel",
-      "image": "/projects/railway_service.png",
+      "image": "/images/projects/railway_service.png",
+      "links": {
+        "code": "https://github.com/khaingthazindev/thazin-railway-service",
+        "video": "",
+        "visit": ""
+      }
+    },
+    {
+      "name": "Yangon Railway Service",
+      "techstack": "Laravel, Vue.js, Vant (Mobile UI)",
+      "category": "All",
+      "image": "/images/projects/railway_service.png",
       "links": {
         "code": "https://github.com/khaingthazindev/thazin-railway-service",
         "video": "",
@@ -206,9 +376,9 @@ export const data = {
     },
     {
       "name": "Todo List",
-      "techstack": "React.js, HTML5, CSS3, JavaScript",
-      "category": "React",
-      "image": "/projects/todo.png",
+      "techstack": "React.js",
+      "category": "React.js",
+      "image": "/images/projects/todo.png",
       "links": {
         "code": "https://github.com/khaingthazindev/task-management",
         "video": "https://github.com/khaingthazindev/task-management",
@@ -216,87 +386,10 @@ export const data = {
       }
     },
     {
-      "name": "Project Title",
-      "techstack": "HTML5, CSS3, JavaScript, jQuery",
-      "category": "MERN Stack",
-      "image": "/php.png",
-      "links": {
-        "code": "https://github.com/khaingthazindev/task-management",
-        "video": "https://github.com/khaingthazindev/task-management",
-        "visit": "https://github.com/khaingthazindev/task-management"
-      }
-    },
-    {
-      "name": "Project Title",
-      "techstack": "HTML5, CSS3, JavaScript, jQuery",
-      "category": "MERN Stack",
-      "image": "/php.png",
-      "links": {
-        "code": "https://github.com/khaingthazindev/task-management",
-        "video": "https://github.com/khaingthazindev/task-management",
-        "visit": "https://github.com/khaingthazindev/task-management"
-      }
-    },
-    {
-      "name": "Project Title",
-      "techstack": "HTML5, CSS3, JavaScript, jQuery",
-      "category": "MERN Stack",
-      "image": "/php.png",
-      "links": {
-        "code": "https://github.com/khaingthazindev/task-management",
-        "video": "https://github.com/khaingthazindev/task-management",
-        "visit": "https://github.com/khaingthazindev/task-management"
-      }
-    },
-    {
-      "name": "Project Title",
-      "techstack": "HTML5, CSS3, JavaScript, jQuery",
-      "category": "MERN Stack",
-      "image": "/php.png",
-      "links": {
-        "code": "https://github.com/khaingthazindev/task-management",
-        "video": "https://github.com/khaingthazindev/task-management",
-        "visit": "https://github.com/khaingthazindev/task-management"
-      }
-    },
-    {
-      "name": "Project Title",
-      "techstack": "HTML5, CSS3, JavaScript, jQuery",
-      "category": "MERN Stack",
-      "image": "/php.png",
-      "links": {
-        "code": "https://github.com/khaingthazindev/task-management",
-        "video": "https://github.com/khaingthazindev/task-management",
-        "visit": "https://github.com/khaingthazindev/task-management"
-      }
-    },
-    {
-      "name": "Project Title",
-      "techstack": "HTML5, CSS3, JavaScript, jQuery",
-      "category": "MERN Stack",
-      "image": "/php.png",
-      "links": {
-        "code": "https://github.com/khaingthazindev/task-management",
-        "video": "https://github.com/khaingthazindev/task-management",
-        "visit": "https://github.com/khaingthazindev/task-management"
-      }
-    },
-    {
-      "name": "Project Title",
-      "techstack": "HTML5, CSS3, JavaScript, jQuery",
-      "category": "Javascript",
-      "image": "/php.png",
-      "links": {
-        "code": "https://github.com/khaingthazindev/task-management",
-        "video": "https://github.com/khaingthazindev/task-management",
-        "visit": "https://github.com/khaingthazindev/task-management"
-      }
-    },
-    {
-      "name": "Student Management",
-      "techstack": "HTML5, CSS3, JavaScript, jQuery",
-      "category": "Laravel",
-      "image": "/php.png",
+      "name": "Todo List",
+      "techstack": "React.js",
+      "category": "All",
+      "image": "/images/projects/todo.png",
       "links": {
         "code": "https://github.com/khaingthazindev/task-management",
         "video": "https://github.com/khaingthazindev/task-management",
@@ -304,6 +397,10 @@ export const data = {
       }
     },
   ],
+  
+  
+  
+  
   "educations": [
     {
       "institute": "XYZ School | CBSE",

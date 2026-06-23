@@ -11,6 +11,7 @@ import Intro from "@/app/components/Intro";
 import Network from "@/app/components/Network";
 import About from "@/app/components/About";
 import Skills from "@/app/components/skills/Skills";
+import Projects from "@/app/components/projects/Projects";
 
 const Home = ({data}: HomePageProps) => {
   return (
@@ -20,6 +21,7 @@ const Home = ({data}: HomePageProps) => {
       <Network socials={data.socials} />
       <About aboutData={data.about} name={data.main.name} />
       <Skills skillData={data.skills} />
+      <Projects projectsData={data.projects} />
     </>
   )
 }

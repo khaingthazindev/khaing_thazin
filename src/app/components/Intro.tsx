@@ -73,6 +73,7 @@ const Intro = ({ mainData }: IntroProps) => {
         <div className="relative mx-auto lg:mx-0 mt-12 md:mt-16 lg:mt-0 ">
           <div className="w-56 h-56 rounded-full md:w-80 md:h-80 lg:-translate-x-16">
             <Image
+              priority
               loading='eager'
               alt='avatar'
               width={1000}
