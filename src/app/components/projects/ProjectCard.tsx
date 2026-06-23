@@ -3,10 +3,10 @@ import Image from "next/image"
 import Link from "next/link"
 import { FaGithub, FaVideo } from "react-icons/fa"
 import { BiLinkExternal } from "react-icons/bi"
-import { motion } from 'framer-motion';
+import {motion, Variants} from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-const cardVariants = {
+const cardVariants: Variants = {
     hidden: { y: 50, opacity: 0 },
     visible: { y: 0, opacity: 1, transition: { duration: 0.6, ease: 'easeInOut' } }
 };
